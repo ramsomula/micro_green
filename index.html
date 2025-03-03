@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pure Grow - Microgreens Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Pure Grow - Microgreens Tracker</h1>
+      <h3>"Nurturing Nature, Growing Health"</h3>
+
+      <label>
+        Your Name:
+        <input type="text" id="username" placeholder="Enter your name" />
+      </label>
+      <br /><br />
+      <label>Microgreen: <input type="text" id="microgreen" /></label>
+      <label
+        >Germination (Yes/No): <input type="text" id="germination"
+      /></label>
+      <label>Growth Observation: <input type="text" id="growth" /></label>
+      <label>Expected Harvest Date: <input type="date" id="harvest" /></label>
+      <button onclick="addEntry()">Add Entry</button>
+
+      <h2>Growth Log</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Microgreen</th>
+            <th>Germination</th>
+            <th>Growth Observation</th>
+            <th>Expected Harvest</th>
+          </tr>
+        </thead>
+        <tbody id="logTable"></tbody>
+      </table>
+
+      <h2>Growth Analysis</h2>
+      <canvas id="growthChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
